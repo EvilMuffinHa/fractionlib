@@ -430,3 +430,29 @@ def simplification(bool):
         simplificate = bool
     else:
         raise Error('Simplification has boolean argument. ')
+
+
+
+if __name__ == '__main__':
+    from sys import argv
+    x = Fraction(-2, -3)
+    y = Fraction(2, 3)
+    z = Fraction(5, 7)
+    try:
+        if argv[1].lower() == 'true':
+            simplification(True)
+        else:
+            simplification(False)
+    except:
+        simplification(False)
+    print()
+    print(x + y)
+    print(x + y + z)
+    print(Fraction(3, 4) *  y)
+    print(y * z)
+    print(y - z)
+    print(x * y - z)
+    print(x == y)
+    print(x != y)
+    print(x > z)
+    print(y <= z)
