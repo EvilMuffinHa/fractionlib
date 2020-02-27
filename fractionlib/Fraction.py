@@ -1,5 +1,7 @@
 import math
 
+#for simplification
+
 simplificate = False
 
 class Error(Exception):
